@@ -1,7 +1,5 @@
-from machinetranslation import translator
+from machinetranslation.translator import english_to_french, french_to_english
 from deep_translator import MyMemoryTranslator
-from translator import english_to_french
-from translator import french_to_english
 from flask import Flask, render_template, request
 import json
 
@@ -23,5 +21,5 @@ def frenchToEnglish():
 def renderIndexPage():
     # Write the code to render template
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+    if __name__ == "__main__":
+        app.run(host="0.0.0.0", port=8080)
